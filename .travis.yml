@@ -4,8 +4,6 @@ sudo: required
 
 service: docker
 
-before_install: apt-get update -y
-
 install: 
   - apt install epel-release
   - apt install python-pip
