@@ -4,9 +4,11 @@ sudo: required
 
 service: docker
 
+before_install: apt-get install yum 
+
 install: 
-  - yum install epel-release
-  - yum install python-pip
+  - apt install epel-release
+  - apt install python-pip
 
 script:
   - echo " installation docker"
