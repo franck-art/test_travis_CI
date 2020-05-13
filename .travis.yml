@@ -4,15 +4,8 @@ sudo: required
 
 service: docker
 
-install: 
-  - apt install epel-release
-  - apt install python-pip
-
 script:
-  - echo " installation docker"
-  - echo ` curl -fsSL https://get.docker.com -o get-docker.sh`
-  - echo `sh get-docker.sh`
-  - echo 'fin du script'
+  - ./script.sh
 
 after_script: 
   - echo "fin"
