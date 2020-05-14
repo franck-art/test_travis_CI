@@ -1,0 +1,11 @@
+language: bash
+
+sudo: required
+
+service: docker
+
+script:
+  - ./script.sh
+
+after_script: 
+  - echo "fin"
